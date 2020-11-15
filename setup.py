@@ -10,7 +10,10 @@ BASE_DEPENDENCIES = [
 
 # TEST_DEPENDENCIES = [
 # ]
-#
+
+# DEVELOPMENT_DEPENDENCIES = [
+# ]
+
 # LOCAL_DEPENDENCIES = [
 # ]
 
@@ -31,6 +34,7 @@ setup(
     # tests_require=TEST_DEPENDENCIES,
     # extras_require = {
     #     'test': TEST_DEPENDENCIES,
+    #     'development': DEVELOPMENT_DEPENDENCIES,
     #     'local': LOCAL_DEPENDENCIES
     # },
     keywords=[],
