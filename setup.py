@@ -37,6 +37,11 @@ setup(
     #     'development': DEVELOPMENT_DEPENDENCIES,
     #     'local': LOCAL_DEPENDENCIES
     # },
+    # entry_points={
+    #     "console_scripts": [
+    #          "COMMAND_NAME = MODULE_PATH:METHOD_NAME"
+    #     ]
+    # },
     keywords=[],
     classifiers=[
         'Intended Audience :: Developers',
