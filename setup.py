@@ -4,7 +4,7 @@ from setuptools import setup, find_packages
 BASEDIR = os.path.dirname(os.path.abspath(__file__))
 VERSION = open(os.path.join(BASEDIR, 'VERSION')).read().strip()
 
-# Dependencies (format is 'PYPI_PACKAGE_NAME[>=]=VERSION_NUMBER')
+# Dependencies (format is 'PYPI_PACKAGE_NAME[>]=VERSION_NUMBER')
 BASE_DEPENDENCIES = [
 ]
 
