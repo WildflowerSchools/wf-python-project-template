@@ -1,1 +1,1 @@
-from MODULE_NAME.core import *
+from .core import *
