@@ -1,8 +1,14 @@
-import os
 from setuptools import setup, find_packages
+import re
+import os
 
 BASEDIR = os.path.dirname(os.path.abspath(__file__))
-VERSION = open(os.path.join(BASEDIR, 'VERSION')).read().strip()
+
+VERSION_RE = re.compile(r'''__version__ = ['"]([0-9.]+)['"]''')
+
+def get_version():
+    init = open(os.path.join(BASEDIR, 'MODULE_NAME', '__init__.py')).read()
+    return VERSION_RE.search(init).group(1)
 
 # Dependencies (format is 'PYPI_PACKAGE_NAME[>]=VERSION_NUMBER')
 BASE_DEPENDENCIES = [
@@ -23,7 +29,7 @@ os.chdir(os.path.normpath(BASEDIR))
 setup(
     name='PYPI_PACKAGE_NAME',
     packages=find_packages(),
-    version=VERSION,
+    version=get_version(),
     include_package_data=True,
     description='SHORT_DESCRIPTION',
     long_description=open('README.md').read(),
