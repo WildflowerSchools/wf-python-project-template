@@ -33,6 +33,7 @@ setup(
     include_package_data=True,
     description='SHORT_DESCRIPTION',
     long_description=open('README.md').read(),
+    long_description_content_type='text/markdown',
     url='GITHUB_URL',
     author='AUTHOR_FULL_NAME',
     author_email='AUTHOR_EMAIL_ADDRESS',
