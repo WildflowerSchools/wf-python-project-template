@@ -1,9 +1,9 @@
 [project]
-name = "PROJECT_NAME"
+name = "wf-project-name"
 dynamic = ["version"]
 
 [tool.poetry]
-name = "PROJECT_NAME"
+name = "wf-project-name"
 version = "0.1.0"
 description = ""
 authors = ["NAME <EMAIL>"]
